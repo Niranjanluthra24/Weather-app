@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.rightPanelContainer {
+    width: 30%;
+    height: 135vh;
+    background-color: #086692;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 3rem;
+    padding-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.rightPanelHeader {
+    width: 100%;
+    height: auto;
+    border-bottom: 0.1rem solid white;
+    box-sizing: border-box;
+    padding-bottom: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightPanelHeader .up {
+    width: 100%;
+    height: auto;
+    margin-bottom: 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightPanelHeader .up div {
+    width: auto;
+    height: auto;
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.rightPanelHeader .up div span:nth-of-type(1) {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.rightPanelHeader .up div span:nth-of-type(2) {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.rightPanelHeader .low {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.rightPanelHeader .low div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.rightPanelHeader .low div span:nth-of-type(1) {
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.rightPanelHeader .low div span:nth-of-type(2) {
+    font-size: 4.4rem;
+    font-weight: 400;
+}
+
+.rightPanelHeader .low div:nth-of-type(2) {
+    max-width: 40%;
+    height: auto;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: right;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rightPanelRainInfo {
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.rightPanelLower {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.rightPanelLower .heading,
+.rightPanelRainInfo .heading {
+    width: 100%;
+    height: auto;
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.rightPanelLower .sunInfo {
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid white;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.rightPanelLower .sunInfo .sunIcon {
+    margin-right: 1.5rem;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.rightPanelLower .sunInfo div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.rightPanelLower .sunInfo div:nth-of-type(2) {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightPanelLower .sunInfo div span:nth-of-type(1) {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.rightPanelLower .sunInfo div span:nth-of-type(2) {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+@media (min-width:320px)and (max-width: 485px) {
+    .rightPanelContainer {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .rightPanelHeader .up {
+        display: none;
+    }
+
+    .rightPanelLower {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .rightPanelLower .heading {
+        width: 100%;
+    }
+
+    .rightPanelLower .sunInfo {
+        width: 49%;
+    }
+
+    .rightPanelLower .sunInfo .sunIcon {
+        margin-right: 1.5rem;
+        font-size: 2.6rem;
+    }
+
+    .rightPanelLower .sunInfo div span:nth-of-type(1) {
+        font-size: 1rem;
+    }
+
+    .rightPanelLower .sunInfo div span:nth-of-type(2) {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .rightPanelHeader {
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (min-width:485px)and (max-width: 768px) {
+    .rightPanelContainer {
+        width: 100%;
+        height: 110vh;
+    }
+
+    .rightPanelHeader .up {
+        display: none;
+    }
+
+    .rightPanelLower {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .rightPanelLower .heading {
+        width: 100%;
+    }
+
+    .rightPanelLower .sunInfo {
+        width: 49%;
+    }
+
+    .rightPanelLower .sunInfo .sunIcon {
+        margin-right: 1.5rem;
+        font-size: 2.6rem;
+    }
+
+    .rightPanelLower .sunInfo div span:nth-of-type(1) {
+        font-size: 1rem;
+    }
+
+    .rightPanelLower .sunInfo div span:nth-of-type(2) {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .rightPanelHeader {
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .rightPanelContainer {
+        height: 112vh;
+    }
+}

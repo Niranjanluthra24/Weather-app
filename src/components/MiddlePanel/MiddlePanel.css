@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.middlePanelContainer {
+    width: 50%;
+    height: 135vh;
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.middleHeader {
+    width: 100%;
+    height: auto;
+    padding: 2.5rem;
+    border-bottom: .2rem solid #dddddd87;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middleHeader .day {
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.middleHeader .day span:nth-of-type(1) {
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.middleHeader .day span:nth-of-type(2) {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #9c9797;
+}
+
+.middleHeader .searchPanel {
+    width: auto;
+    height: auto;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleHeader .searchPanel #searchIcon {
+    font-size: 1.8rem;
+    position: absolute;
+    left: 1.8rem;
+    color: #9c9797;
+}
+
+.middleHeader .searchPanel input {
+    width: 24rem;
+    height: 4rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    padding-left: 3.5rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e8e3e360;
+}
+
+.middleHeader .searchPanel input:focus {
+    outline: none;
+}
+
+.middleHeader .searchPanel button {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #e8e3e360;
+}
+
+.middleHeader .searchPanel button span {
+    color: #9c9797;
+    font-size: 2rem;
+    font-weight: 300;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.middleInfo {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.middleInfo .heading {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.middleInfo .weatherAbout {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.middleInfo .weatherAbout .weatherInfo {
+    width: 48%;
+    height: 9rem;
+    background-color: pink;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #e6dfdf58;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.middleInfo .weatherAbout .weatherInfo .data {
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.weatherInfo .data span:nth-of-type(1) {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.6rem;
+    color: #8f8989;
+}
+
+.weatherInfo .data span:nth-of-type(2) {
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.weatherInfo .weatherIcon {
+    font-size: 4rem;
+    margin-left: 0.5rem;
+    margin-right: 1.5rem;
+    font-weight: 300;
+    color: #008adf;
+}
+
+.lowerGraph {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.lowerGraph .heading {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+@media (min-width:320px)and (max-width: 485px) {
+    .middlePanelContainer {
+        width: 100%;
+        height: 108vh;
+    }
+
+    .middleInfo .weatherAbout .weatherInfo {
+        height: 7rem;
+    }
+
+    .weatherInfo .data span:nth-of-type(1) {
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .weatherInfo .data span:nth-of-type(2) {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .weatherInfo .weatherIcon {
+        font-size: 3rem;
+        margin-left: 0.5rem;
+        margin-right: 1.5rem;
+    }
+}
+
+@media (min-width:485px)and (max-width: 768px) {
+    .middlePanelContainer {
+        width: 100%;
+        height: 158vh;
+    }
+
+    .middleInfo .weatherAbout .weatherInfo {
+        height: 7rem;
+    }
+
+    .weatherInfo .data span:nth-of-type(1) {
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .weatherInfo .data span:nth-of-type(2) {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .weatherInfo .weatherIcon {
+        font-size: 3rem;
+        margin-left: 0.5rem;
+        margin-right: 1.5rem;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .middlePanelContainer {
+        height: 112vh;
+    }
+
+}

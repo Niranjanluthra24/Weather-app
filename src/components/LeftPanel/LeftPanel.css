@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.leftPanelContainer {
+    width: 20%;
+    height: 135vh;
+    background-color: #dddddd87;
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftPanelUpper {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.leftPanelTitle {
+    width: 100%;
+    height: auto;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+    color: #008adf;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#leftPanelLogo {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+.leftPanelOptions {
+    width: 100%;
+    height: auto;
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding-left: 2.3rem;
+    margin-bottom: 2.5rem;
+    color: #9c9797;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.leftPanelUpper .leftPanelOptions:nth-of-type(2) {
+    color: #008adf;
+}
+
+.leftPanelOptions span {
+    width: auto;
+    height: auto;
+    font-size: 2.8rem;
+    font-weight: 200;
+    margin-right: 1rem;
+}
+
+.leftPanelLower {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.leftPanelLower div:nth-of-type(1) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2.5rem;
+    padding-left: 1.8rem;
+    color: #9c9797;
+    font-size: 1.8rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.leftPanelLower div:nth-of-type(3) {
+    color: #E21818;
+}
+
+@media (min-width:320px) and (max-width: 768px) {
+    .leftPanelContainer {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        justify-content: center;
+    }
+
+    .leftPanelUpper .leftPanelTitle {
+        padding-left: 0;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
+
+    .leftPanelUpper .leftPanelOptions,
+    .leftPanelLower {
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .leftPanelContainer {
+        height: 112vh;
+    }
+}
